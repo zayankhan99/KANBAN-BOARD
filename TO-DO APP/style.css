@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.main{
+}
+
+.main-box {
+    
+    background-color: black;
+    border-radius: 20px;
+    box-sizing: inherit;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+}
