@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assests/kanban.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div id="login-container" class="container">
+        <input type="checkbox" id="check">
+        <div class="login form">
+            <header>Login</header>
+            <form action="#">
+                <input type="text" placeholder="Enter your email" id="l-email">
+                <input type="password" placeholder="Enter your password" id="l-password">
+                <input onclick="login()" type="button" class="button" value="Login">
+            </form>
+            <div class="signup">
+                <span class="signup">Don't have an account?
+                    <label for="check">Signup</label>
+                </span>
+            </div>
+        </div>
+        <div class="registration form">
+            <header>Signup</header>
+            <form action="#">
+                <input type="text" placeholder="Enter your name " id="r-name">
+                <input type="text" placeholder="Enter your email" id="r-email">
+                <input type="password" placeholder="Create a password" id="r-password">
+                <input type="button" class="button" value="Signup" onclick="register(), done()">
+            </form>
+            <div class="signup">
+                <span class="signup">Already have an account?
+                    <label for="check">Login</label>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div id="kanban-board" style="display: none;">
+        <div class="input-section">
+            <input type="text" id="taskInput" placeholder="Enter task...">
+            <button id="saveButton">Save</button>
+        </div>
+        <div class="cards-container">
+            <div class="card" id="todo">
+                <h2>To Do</h2>
+            </div>
+            <div class="card" id="processing">
+                <h2>Processing</h2>
+            </div>
+            <div class="card" id="done">
+                <h2>Done</h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="assests/script.js"></script>
+</body>
+</html>
